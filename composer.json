@@ -1,0 +1,38 @@
+{
+    "name": "dimonml/laravel-ethereum",
+    "description": "the ethereum json rpc api",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "Ethereum",
+        "Laravel"
+    ],
+    "authors": [
+        {
+            "name": "Dima",
+            "email": "dima.mladin@rinnovation.ro"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "guzzlehttp/guzzle": "~5.3|~6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dimonml\\LaravelEthereum\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dimonml\\LaravelEthereum\\EthereumServiceProvider"
+            ],
+            "aliases": {
+                "Ethereum": "Dimonml\\LaravelEthereum\\Facade\\Ethereum"
+            }
+        }
+    }
+}
