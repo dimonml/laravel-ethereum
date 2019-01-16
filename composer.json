@@ -28,10 +28,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Dimonml\\LaravelEthereum\\EthereumServiceProvider"
+                "Jcsofts\\LaravelEthereum\\EthereumServiceProvider"
             ],
             "aliases": {
-                "Ethereum": "Dimonml\\LaravelEthereum\\Facade\\Ethereum"
+                "Ethereum": "Jcsofts\\LaravelEthereum\\Facade\\Ethereum"
             }
         }
     }
